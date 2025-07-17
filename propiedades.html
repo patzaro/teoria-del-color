@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoría del Color: Propiedades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Círculo Cromático</a></li>
+                <li><a href="propiedades.html" class="active">Propiedades</a></li>
+                <li><a href="armonias.html">Armonías</a></li>
+                <li><a href="psicologia.html">Psicología</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="properties-section">
+            <h1>Propiedades del Color (Tono, Saturación, Valor)</h1>
+            <div class="properties-grid">
+                <div class="properties-controls">
+                    <div class="slider-group">
+                        <label for="hue-slider">Tono (H)</label>
+                        <input type="range" id="hue-slider" min="0" max="360" value="180">
+                        <p>El <strong>Tono</strong> es lo que comúnmente llamamos "color".</p>
+                    </div>
+                    <div class="slider-group">
+                        <label for="saturation-slider">Saturación (S)</label>
+                        <input type="range" id="saturation-slider" min="0" max="100" value="100">
+                        <p>La <strong>Saturación</strong> es la pureza o intensidad del color.</p>
+                    </div>
+                    <div class="slider-group">
+                        <label for="value-slider">Valor (V)</label>
+                        <input type="range" id="value-slider" min="0" max="100" value="100">
+                        <p>El <strong>Valor</strong> (o brillo) describe qué tan claro u oscuro es el color.</p>
+                    </div>
+                </div>
+                <div class="properties-display">
+                    <div id="color-preview" class="color-preview"></div>
+                    <div id="color-values" class="color-values"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Recurso educativo creado por Pat Zaro. Licencia CC BY-SA <span id="year"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

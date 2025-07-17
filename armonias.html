@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoría del Color: Armonías</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Círculo Cromático</a></li>
+                <li><a href="propiedades.html">Propiedades</a></li>
+                <li><a href="armonias.html" class="active">Armonías</a></li>
+                <li><a href="psicologia.html">Psicología</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="harmonies-section">
+            <h1>Armonías de Color</h1>
+            <p>Las armonías son combinaciones de colores agradables a la vista. Elige un color base para generar diferentes paletas armónicas.</p>
+            <div class="harmony-controls">
+                <label for="harmony-color-picker">Elige un color base:</label>
+                <input type="color" id="harmony-color-picker" value="#00ffff">
+            </div>
+            <div id="harmony-palettes" class="harmony-palettes"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Recurso educativo creado por Pat Zaro. Licencia CC BY-SA <span id="year"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
