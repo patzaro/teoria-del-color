@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoría del Color: Guía Interactiva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Teoría del color: Una guía interactiva</h1>
+        <p class="subtitle">Aprende los fundamentos del color de forma visual y práctica.</p>
+    </header>
+
+    <main>
+        <section id="color-wheel-section">
+            <h2>El Círculo Cromático Interactivo</h2>
+            <p>El círculo cromático nos ayuda a visualizar la relación entre los colores. Este modelo se basa en los primarios sustractivos (Cian, Magenta, Amarillo).</p>
+            <div class="color-wheel-container">
+                <div class="color-wheel">
+                    <!-- Los segmentos del círculo se generan con JS -->
+                </div>
+                <div id="tooltip" class="tooltip"></div>
+            </div>
+        </section>
+
+        <section id="properties-section">
+            <h2>Propiedades del Color (Tono, Saturación, Valor)</h2>
+            <div class="properties-grid">
+                <div class="properties-controls">
+                    <div class="slider-group">
+                        <label for="hue-slider">Tono (H)</label>
+                        <input type="range" id="hue-slider" min="0" max="360" value="180">
+                        <p>El <strong>Tono</strong> es lo que comúnmente llamamos "color" (rojo, verde, azul). Se representa como un ángulo en el círculo cromático.</p>
+                    </div>
+                    <div class="slider-group">
+                        <label for="saturation-slider">Saturación (S)</label>
+                        <input type="range" id="saturation-slider" min="0" max="100" value="100">
+                        <p>La <strong>Saturación</strong> es la pureza o intensidad del color. Un 0% de saturación resulta en un tono de gris.</p>
+                    </div>
+                    <div class="slider-group">
+                        <label for="value-slider">Valor (V)</label>
+                        <input type="range" id="value-slider" min="0" max="100" value="100">
+                        <p>El <strong>Valor</strong> (o brillo) describe qué tan claro u oscuro es el color, variando de negro a blanco.</p>
+                    </div>
+                </div>
+                <div class="properties-display">
+                    <div id="color-preview" class="color-preview"></div>
+                    <div id="color-values" class="color-values">
+                        <!-- Los valores se actualizan con JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="harmonies-section">
+            <h2>Armonías de Color</h2>
+            <p>Las armonías son combinaciones de colores agradables a la vista. Elige un color base para generar diferentes paletas armónicas.</p>
+            <div class="harmony-controls">
+                <label for="harmony-color-picker">Elige un color base:</label>
+                <input type="color" id="harmony-color-picker" value="#00ffff">
+            </div>
+            <div id="harmony-palettes" class="harmony-palettes">
+                <!-- Las paletas se generan con JS -->
+            </div>
+        </section>
+
+        <section id="psychology-section">
+            <h2>Psicología del Color</h2>
+            <p>Los colores pueden evocar emociones y tener significados culturales. Haz clic en cada tarjeta para saber más.</p>
+            <div class="psychology-grid">
+                <!-- Las tarjetas se generan con JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Recurso educativo creado por Pat Zaro. Licencia CC BY-SA <span id="year"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
