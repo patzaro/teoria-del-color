@@ -30,11 +30,11 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
 
 1.  Clona el repositorio en tu máquina:
     ```
-    git clone https://github.com/tu-usuario/teoria-del-color-webapp.git
+    git clone https://github.com/tu-usuario/teoria-del-color.git
     ```
 2.  Navega al directorio del proyecto:
     ```
-    cd teoria-del-color-webapp
+    cd teoria-del-color
     ```
 3.  Abre el archivo `index.html` en tu navegador web. Desde allí podrás navegar a las demás páginas.
 
